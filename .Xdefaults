@@ -1,0 +1,47 @@
+URxvt.urgentOnBell: true
+URxvt.pointerBlank: true
+URxvt.pointerBlankDelay: 2
+URxvt.scrollBar: false
+!URxvt*termName: rxvt-unicode
+
+urxvt*perl-lib: /usr/lib/urxvt/perl/
+urxvt*perl-ext-common: default,matcher
+urxvt*urlLauncher: /usr/bin/firefox
+urxvt*matcher.button: 1
+
+!URxvt*font: xft:Terminus:pixelsize=8:antialias=false
+!URxvt.boldFont: xft:Terminus:pixelsize=8:antialias=false
+URxvt*font:                         xft:Dejavu Sans Mono:pixelsize=11
+
+URxvt*background: #161616
+URxvt.foreground: #e6e6e6
+URxvt.colorIT: #444
+URxvt.colorBD: #FFFFFF
+URxvt.colorUL: #FF8F00
+URxvt.colorRV: #333333
+URxvt.underlineColor: #0E0E0E
+
+!black
+*color0: #222222
+*color8: #666666
+!red
+*color1: #E84F4F
+*color9: #D23D3D
+!green
+*color2: #B7CE42
+*color10: #BDE077
+!yellow
+*color3: #FEA63C
+*color11: #FFE863
+!blue
+*color4: #66AABB
+*color12: #AACCBB
+!magenta
+*color5: #B7416E
+*color13: #E16A98
+!cyan
+*color6: #6D878D
+*color14: #42717B
+!white
+*color7: #DDDDDD
+*color15: #CCCCCC
