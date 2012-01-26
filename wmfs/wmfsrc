@@ -18,16 +18,20 @@
         # true  -- default, set focus
         # false -- click go to client; including dockapps
         focus_pointer_click = true
+
 [/misc]
 
 [bar]
         bg     = "#191919"
         fg     = "#D4D4D4"
         border = true
-        #height = "-1"
+#        height = "-1"
 
-        light_shade =  0.10
-        dark_shade  = -0.10
+  #      light_shade =  0.10
+  #      dark_shade  = -0.10
+	
+				 light_shade = 0.00
+				dark_shade	 = 0.00
 
         # Order of infobar elements:
         # t = Tag list
@@ -49,7 +53,7 @@
         # Remove this section to disable the selbar.
         [selbar]
                 bg = "#191919"
-                fg = "#D4D4ff"
+                fg = "#982227"
 
                 # Cut title length
                 # max_length = 25
@@ -62,7 +66,7 @@
 [/bar]
 
 [layouts]
-        fg = "#D8972F"
+        fg = "#982227"
         bg = "#191919"
 
         # Border around the layout button.
@@ -84,19 +88,39 @@
         # layout_button_width = x
 
         # Tiling layouts.
-        [layout] type = "tile_right"         symbol = "RIGHT"    [/layout]
-        [layout] type = "tile_left"          symbol = "LEFT"     [/layout]
-        [layout] type = "tile_top"           symbol = "TOP"      [/layout]
-        [layout] type = "tile_bottom"        symbol = "BOTTOM"   [/layout]
-        [layout] type = "tile_grid"          symbol = "GRID_H"   [/layout]
-        [layout] type = "tile_grid_vertical" symbol = "GRID_V"   [/layout]
-        [layout] type = "mirror_vertical"    symbol = "MIRROR_V" [/layout]
-        [layout] type = "mirror_horizontal"  symbol = "MIRROR_H" [/layout]
+			        [layout]
+    type = "tile_right"
+    symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/tr.png]\"
+  [/layout]
+        [layout] type = "tile_left"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/tl.png]\"
+  [/layout]
+        [layout] type = "tile_top"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/tt.png]\"
+  [/layout]
+        [layout] type = "tile_bottom"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/tb.png]\"
+  [/layout]
+        [layout] type = "tile_grid"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/tg.png]\"
+  [/layout]
+        [layout] type = "tile_grid_vertical"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/la.png]\"
+  [/layout]
+        [layout] type = "mirror_vertical"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/mv.png]\"
+  [/layout]
+        [layout] type = "mirror_horizontal"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/mh.png]\"
+  [/layout]
 
-        # Other layouts.
-        [layout] type = "max"   symbol = "MAX"  [/layout]
-        [layout] type = "free"  symbol = "FREE" [/layout]
-
+        [layout] type = "max"
+     symbol = " \i[3;4;15;13;/home/niklas/.config/wmfs/icons/max.png]\"
+  [/layout]
+        [layout] type = "free"
+     symbol = " \i[3;3;15;13;/home/niklas/.config/wmfs/icons/fr.png]\"
+  [/layout]
+	
 [/layouts]
 
 [tags]
@@ -117,12 +141,12 @@
         # Going twice on the same tag will bring you back on the previous one
         tag_auto_prev  = true
 
-        occupied_bg    = "#191919"
-        occupied_fg    = "#D4D4D4"
-        sel_fg         = "#D8972F"
-        sel_bg         = "#191919"
-        urgent_bg      = "#DD1111"
-        urgent_fg      = "#000000"
+        occupied_bg    = "#333"
+        occupied_fg    = "#b3b3b3"
+        sel_fg         = "#E8AE5B"
+        sel_bg         = "#333"
+        urgent_bg      = "#BF4D80"
+        urgent_fg      = "#fff"
 
         # If true, number of the tag will be used for name
         name_count     = false
@@ -165,7 +189,7 @@
 				[/tag]
         
 				[tag] name = "dc++"  [/tag]
-        [tag] name = "torrent"   [/tag]
+        [tag] name = "music"   [/tag]
 [/tags]
 
 [root]
@@ -180,13 +204,13 @@
 [client]
         client_round         = true
         client_auto_center   = false
-        border_height        = 1
-        border_shadow        = true
-        border_normal        = "#191919"
-        border_focus         = "#D8972F"
+        border_height        = 2
+        border_shadow        = false
+        border_normal        = "#0a0a0a"
+        border_focus         = "#982227"
         place_at_mouse       = false
-        resize_corner_normal = "#191919"
-        resize_corner_focus  = "#D8972F"
+        resize_corner_normal = "#0a0a0a"
+        resize_corner_focus  = "#982227"
         set_new_win_master   = true
         client_tile_raise    = false
         new_client_get_mouse = false
@@ -361,10 +385,10 @@
         [key] mod = {"Alt", "Shift"} key = "space" func = "layout_prev" [/key]
 
         # Increase nmaster.
-        [key] mod = {"Alt"} key = "d" func = "set_nmaster" cmd = "+1" [/key]
+        [key] mod = {"Alt", "Control"} key = "d" func = "set_nmaster" cmd = "+1" [/key]
 
         # Decease nmaster.
-        [key] mod = {"Alt", "Shift"} key = "d" func = "set_nmaster" cmd = "-1" [/key]
+        [key] mod = {"Alt", "Control"} key = "s" func = "set_nmaster" cmd = "-1" [/key]
 
         #Launcher.
         [key] mod = {"Alt"} key = "p" func = "launcher" cmd = "launcher_exec" [/key]
