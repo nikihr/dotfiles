@@ -3,7 +3,7 @@ set smartindent
 
 set t_Co=256 " Use 256 colors
 syntax on
-color molokai
+color railscasts
 
 nmap <silent> <C-d> :NERDTreeToggle<CR>
 set tabstop=2
