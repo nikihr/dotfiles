@@ -25,12 +25,11 @@
         bg     = "#191919"
         fg     = "#D4D4D4"
         border = true
-#        height = "-1"
-
-  #      light_shade =  0.10
+  
+	#      light_shade =  0.10
   #      dark_shade  = -0.10
 	
-				 light_shade = 0.00
+				light_shade = 0.00
 				dark_shade	 = 0.00
 
         # Order of infobar elements:
@@ -141,10 +140,10 @@
         # Going twice on the same tag will bring you back on the previous one
         tag_auto_prev  = true
 
-        occupied_bg    = "#333"
-        occupied_fg    = "#b3b3b3"
-        sel_fg         = "#E8AE5B"
-        sel_bg         = "#333"
+        occupied_bg    = "#191919"
+        occupied_fg    = "#E8AE5B"
+        sel_fg         = "#D13A17"
+        sel_bg         = "#191919"
         urgent_bg      = "#BF4D80"
         urgent_fg      = "#fff"
 
@@ -206,11 +205,11 @@
         client_auto_center   = false
         border_height        = 2
         border_shadow        = false
-        border_normal        = "#0a0a0a"
-        border_focus         = "#982227"
+        border_normal        = "#191919"
+        border_focus         = "#D13A17"
         place_at_mouse       = false
-        resize_corner_normal = "#0a0a0a"
-        resize_corner_focus  = "#982227"
+        resize_corner_normal = "#191919"
+        resize_corner_focus  = "#D13A17"
         set_new_win_master   = true
         client_tile_raise    = false
         new_client_get_mouse = false
@@ -324,7 +323,12 @@
 
 [keys]
          # Reload the configuration of wmfs.
-        [key] mod = {"Alt", "Control"} key = "r" func = "reload" [/key]
+        
+				[key] mod = {"Super", "Shift"} key = "Down" func = "exec" cmd = "amixer set Master 2dB- unmute" [/key]
+
+				[key] mod = {"Super", "Shift"} key = "Up"		func = "exec" cmd = "amixer set Master 2dB+ unmute" [/key]
+
+				[key] mod = {"Alt", "Control"} key = "r" func = "reload" [/key]
 
         # Open a terminal.
         [key] mod = {"Alt"} key = "Return" func = "spawn" cmd = "urxvt" [/key]
