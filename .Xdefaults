@@ -22,10 +22,10 @@ URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
 !Fonts
-!URxvt*font: 6x10
-!URxvt.boldFont: 6x10
-URxvt*font: xft:Terminus:pixelsize=8:antialias=false
-URxvt.boldFont: xft:Terminus:pixelsize=8:antialias=false
+URxvt*font: 6x10
+URxvt.boldFont: 6x10
+!URxvt*font: xft:Terminus:pixelsize=8:antialias=false
+!URxvt.boldFont: xft:Terminus:pixelsize=8:antialias=false
 !URxvt*font: xft:Monospace:pixelsize=11
 !URxvt*boldFont: xft:Monospace:pixelsize=11
 
@@ -37,11 +37,11 @@ urxvt*matcher.button: 1
 !Colors
 
 URxvt*background: #161616
-URxvt.transparent:true
-URxvt.shading: 10
+!URxvt.transparent:true
+!URxvt.shading: 10
 URxvt.foreground: #e6e6e6
 URxvt.cursorColor: #E8AE5B
-URxvt.cursorColor2: #E(AE5B
+URxvt.cursorColor2: #000000
 URxvt.colorIT: #444
 URxvt.colorBD: #FFFFFF
 URxvt.colorUL: #E8AE5B
