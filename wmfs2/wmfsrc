@@ -160,9 +160,9 @@
 
 
 	# Alsa binds
-	[key] mod = {"Super", "Shift"} key = "Down" func = "exec" cmd = "amixer set Master 2dB- unmute" [/key]
+	[key] mod = {"Super", "Shift"} key = "Down" func = "spawn" cmd = "amixer set Master 2dB- unmute" [/key]
 
-	[key] mod = {"Super", "Shift"} key = "Up"   func = "exec" cmd = "amixer set Master 2dB+ unmute" [/key]
+	[key] mod = {"Super", "Shift"} key = "Up"   func = "spawn" cmd = "amixer set Master 2dB+ unmute" [/key]
 
 
 

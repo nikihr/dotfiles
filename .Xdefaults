@@ -1,54 +1,43 @@
-URxvt.scrollKey: true
-URxvt.scrollWithBuffer: true
-URxvt.scrollBack: true
-URxvt.scrollTtyOutput: false
-URxvt.scrollTtyKeypress: true
-URxvt.jumpScroll: true
-URxvt.skipScroll: true
-URxvt.loginShell: true
-URxvt.urgentOnBell: true
-URxvt.saveLines: 1500
-URxvt.trippleclickwords: true
-URxvt.pasteableTabs: true
-URxvt.pointerBlank: true
-URxvt.pointerBlankDelay: 2
-URxvt.scrollBar: false
-URxvt*termName: rxvt-unicode
-URxvt.depth: 	32
+! -- URxvt -- !
+URxvt*termName:			rxvt-unicode
 
-!Rebind Home and End key
+!URxvt*font: 6x10
+!URxvt*boldFont: 6x10
+!URxvt*font: xft:Terminus:pixelsize=10
+URxvt*font: xft:monospace:pixelsize=11
+URxvt*boldFont: xft:Monospace:pixelsize=11
 
-URxvt*keysym.Home: \033[1~
-URxvt*keysym.End: \033[4~
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1
 
-!Fonts
-URxvt*font: 6x10
-URxvt.boldFont: 6x10
-!URxvt*font: xft:Terminus:pixelsize=8:antialias=false
-!URxvt.boldFont: xft:Terminus:pixelsize=8:antialias=false
-!URxvt*font: xft:Monospace:pixelsize=11
-!URxvt*boldFont: xft:Monospace:pixelsize=11
+URxvt*saveLines:		10000
+URxvt*scrollBar:		false
+URxvt*urgentOnBell:		true
+URxvt*internalBorder:   4
 
-urxvt*perl-lib: /usr/lib/urxvt/perl
-urxvt*perl-ext-common: default,matcher
-urxvt*urlLauncher: /usr/bin/firefox
-urxvt*matcher.button: 1
+!URxvt.transparent: true
+!URxvt*shading: 10
 
-!Colors
 
-URxvt*background: #161616
-!URxvt.transparent:true
-!URxvt.shading: 10
-URxvt.foreground: #e6e6e6
-URxvt.cursorColor: #E8AE5B
-URxvt.cursorColor2: #000000
-URxvt.colorIT: #444
-URxvt.colorBD: #FFFFFF
-URxvt.colorUL: #E8AE5B
-URxvt.colorRV: #333333
-URxvt.underlineColor: #E8AE5B
-!URxvt.borderColor: #0E0E0E
-URxvt.pointerColor: #E8AE5B
-URxvt.pointerColor2: #E8AE5B
-
-#include "/home/niklas/.colors/warm"
+!# include "/home/niklas/.colors/warm"
+*foreground: #cccccc
+*background: #282626
+!*foreground: #6F6767
+!*background: #3A3636
+*color0: #363636
+*color8: #424242
+*color1: #C37561
+*color9: #D19485
+*color2: #A0A57E
+*color10: #B6B99D
+*color3: #D1A375
+*color11: #DEBC9C
+*color4: #7985A3
+*color12: #98A1B9
+*color5: #AB716D
+*color13: #BE918E
+*color6: #98B9B1
+*color14: #CBE6CB
+*color7: #D0D0D0
+*color15: #E6E6E6
